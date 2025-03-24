@@ -55,17 +55,6 @@
 <!--<body class="p-4 m-0 border-0 bd-example m-0 border-0">   p-4 define espaçamento -->
 
 <body>
-  <!-- col-11 faz com que não use a página inteira, porque no boot strap são 12 colunas quando coloca o comando ele deixa espaço na ultima coluna -->
-  <!-- m-auto faz a class fique alinhada ao centro M = margin  -->
-  <!--<nav class="navbar col-11 m-auto navbar-expand-lg bg-body-tertiary style="z-index: 999;"" "></nav>-->
-  <!-- position-fixed fixa o menu na página -->
-  <!--<nav class="navbar navbar-expand-lg col-12 position-fixed bg-body-tertiary" style="z-index: 999;"></nav>-->
-
-  <!-- p-0 espaço interno ao bloco
-        m-0 é a maegem externa do bloco
-  -->
-
- 
 
   <nav class="navbar navbar-expand-lg  navbar-light text-bg-dark fixed-top py-3" id="mainNav">
     <div class="container px-4 px-lg-5">
@@ -88,168 +77,84 @@
 </nav>  
 
   <br>  <br> 
-
+ 
   
    <!-- Contact este envia o e-mail -->
    <section class="page-section text-bg-dark" id="contact">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 text-center">
-          <h2 class="mt-0">Vamos conversar!</h2>
-          
-          <p class="text-ligth mb-5">Relate sua necessidade em poucas palavras!</p>          
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-        <div class="col-lg-8">
-          <form id="contactForm" 
-                action="https://formsubmit.co/sac@plugplayhub.com.br" method="POST">
+    
+    <form name="contact" method="POST" netlify>
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">Vamos conversar!</h2>
             
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" name="name"  id="name" type="text" placeholder="Enter your name..."
-                data-sb-validations="required" />
-              <label for="name">Nome Completo</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">Nome é necessário.</div>
-            </div>
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com"
-                data-sb-validations="required,email" />
-              <label for="email">Email</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">Email é necessário.</div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.</div>
-            </div>
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" name="phone"  id="phone" type="tel" placeholder="(123) 456-7890"
-                data-sb-validations="required" />
-              <label for="phone">Celular</label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">Ceular é necessário.</div>
-            </div>
-            
-            <div class="form-floating mb-3">
-              <textarea class="form-control" name="message"  id="message" type="text" placeholder="Enter your message here..."
-                style="height: 10rem" data-sb-validations="required"></textarea>
-              <label for="message">Mensagem</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem é necessária.</div>
-            </div>           
-         
-           
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">Error enviando mensagem!</div>
-            </div>
-            
-            <div class="d-grid">
-              <button class="btn btn-primary btn-xl" id="submitButton" type="submit" target="_blank">Enviar
-              </button>
-            </div>
-
-
-          </form>
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-4 text-center mb-5 mb-lg-0">
-          <!--
-          <div>(16) 9 8856-4392
-            <br>
-            <br>
-
-            <a href="https://api.whatsapp.com/send/?phone=5516988564392&text=Ol%C3%A1%2C+seja+bem+vindo+a+PlugPlayhub+%2C+como+posso+ajudar%3F&type=phone_number&app_absent=0"
-              target="_blank">
-              <i class="fa-brands fa-whatsapp fa-2xl" style="color: #10c625; "></i>
-
-            </a>
+            <p class="text-ligth mb-5">Relate sua necessidade em poucas palavras!</p>          
           </div>
-          -->
         </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Contact-->
-  <!-- 
-  <section class="page-section text-bg-dark" id="contact">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4  justify-content-center">
-        <div class="col-lg-8  text-center">
-          <h2 class="mt-0">Vamos conversar!</h2>          
-          <p class="text-ligth mb-5">Em poucas palavras relate sua necessidade!</p>
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-        <div class="col-lg-8">
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                data-sb-validations="required" />
-              <label for="name">Nome Completo</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">Nome é necessário.</div>
-            </div>
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                data-sb-validations="required,email" />
-              <label for="email">Email</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">Email é necessário.</div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.</div>
-            </div>
-            
-            <div class="form-floating mb-3">
-              <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                data-sb-validations="required" />
-              <label for="phone">Celular</label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">Ceular é necessário.</div>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                style="height: 10rem" data-sb-validations="required"></textarea>
-              <label for="message">Mensagem</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem é necessária.</div>
-            </div>
-            
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3 ">
-                <div class="fw-bolder">Mensagem enviada com sucesso!</div>
-                <br />
-                
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-8">
+            <form id="contactForm"  action="https://formsubmit.co/sac@Plugplayhub.com.br" method="POST">           
+              
+              <div class="form-floating mb-3">
+                <input class="form-control" name="name"  id="name" type="text" placeholder="Enter your name..."
+                  data-sb-validations="required" />
+                <label for="name">Nome Completo</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Nome é necessário.</div>
               </div>
-            </div>
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">Error enviando mensagem!</div>
-            </div>
-            
-            <div class="d-grid p-4">
-              <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar
-              </button>
-            </div>
-
-
-          </form>
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-4 text-center mb-5 mb-lg-0">
+              
+              <div class="form-floating mb-3">
+                <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com"
+                  data-sb-validations="required,email" />
+                <label for="email">Email</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">Email é necessário.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">Email invalido.</div>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input class="form-control" name="phone"  id="phone" type="tel" placeholder="(123) 456-7890"
+                  data-sb-validations="required" />
+                <label for="phone">Celular</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">Ceular é necessário.</div>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <textarea class="form-control" name="message"  id="message" type="text" placeholder="Enter your message here..."
+                  style="height: 10rem" data-sb-validations="required"></textarea>
+                <label for="message">Mensagem</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem é necessária.</div>
+              </div>           
           
-          <div>(16) 9 8856-4392
-            <br>
-            <br>
+                          
+              <div class="d-grid">
+                <button class="btn btn-primary btn-xl" id="submitButton" type="submit" target="_blank">Enviar                                
+                </button>
+              </div>
 
-            <a href="https://api.whatsapp.com/send/?phone=5516988564392&text=Ol%C3%A1%2C+seja+bem+vindo+a+PlugPlayhub+%2C+como+posso+ajudar%3F&type=phone_number&app_absent=0"
-              target="_blank">
-              <i class="fa-brands fa-whatsapp fa-2xl" style="color: #10c625; "></i>
 
-            </a>
+            </form>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <!--
+            <div>(16) 9 8856-4392
+              <br>
+              <br>
+
+              <a href="https://api.whatsapp.com/send/?phone=5516988564392&text=Ol%C3%A1%2C+seja+bem+vindo+a+PlugPlayhub+%2C+como+posso+ajudar%3F&type=phone_number&app_absent=0"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #10c625; "></i>
+
+              </a>
+            </div>
+            -->
           </div>
         </div>
       </div>
-    </div>
+    </form>
+    
   </section>
-  -->
+
 
 </body>
 <!--
@@ -259,6 +164,7 @@
         <p >meu site</p>
     </div>
 -->
+
 
 </footer>
 
