@@ -82,7 +82,7 @@
    <!-- Contact este envia o e-mail -->
    <section class="page-section text-bg-dark" id="contact">
     
-    <form name="contact" method="POST" data-netlify="true">
+    
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center">
@@ -93,7 +93,9 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-8">
-            <form id="contactForm"  action="https://formsubmit.co/sac@Plugplayhub.com.br" method="POST">           
+            
+            <form name="contact" method="POST" data-netlify="true"></form>            
+            <!-- <form id="contactForm"  action="https://formsubmit.co/sac@Plugplayhub.com.br" method="POST">  -->
               
               <div class="form-floating mb-3">
                 <input class="form-control" name="name"  id="name" type="text" placeholder="Enter your name..."
@@ -103,7 +105,7 @@
               </div>
               
               <div class="form-floating mb-3">
-                <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com"
+                <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com.br"
                   data-sb-validations="required,email" />
                 <label for="email">Email</label>
                 <div class="invalid-feedback" data-sb-feedback="email:required">Email é necessário.</div>
@@ -151,7 +153,7 @@
           </div>
         </div>
       </div>
-    </form>
+    
     
   </section>
 
