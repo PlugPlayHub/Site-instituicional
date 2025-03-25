@@ -558,26 +558,57 @@
 
 <!-- Script para usar no contato -->
 <script>
-  const btn = document.getElementById('button');
+  const btn = document.getElementById("button");
 
- document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-   
-   btn.value = 'Enviando...';
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Impede o envio automático do formulário
 
-   const serviceID = 'default_service';
-   const templateID = 'template_89wyrqd';
+    let isValid = true;
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Enviar';
-      alert('Enviando!');
-    }, (err) => {
-      btn.value = 'Enviar';
-      alert(JSON.stringify(err));
-    });
-});
+    // Captura os campos do formulário
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
+    let message = document.getElementById("message");
+
+    // Função para validar campo e exibir erro
+    function validateField(field) {
+      if (field.value.trim() === "") {
+        field.classList.add("is-invalid"); // Adiciona a classe de erro do Bootstrap
+        isValid = false;
+      } else {
+        field.classList.remove("is-invalid");
+      }
+    }
+
+    // Aplica validação para cada campo obrigatório
+    validateField(name);
+    validateField(email);
+    validateField(phone);
+    validateField(message);
+
+    if (!isValid) {
+      alert("Por favor, preencha todos os campos obrigatórios.");
+      return; // Se algum campo estiver inválido, interrompe o envio
+    }
+
+    // Se os campos estiverem preenchidos, inicia o envio via EmailJS
+    btn.value = "Enviando...";
+
+    const serviceID = "default_service";
+    const templateID = "template_89wyrqd";
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = "Enviar";
+        alert("Mensagem enviada com sucesso!");
+        document.getElementById("form").reset(); // Limpa o formulário após o envio
+      })
+      .catch((err) => {
+        btn.value = "Enviar";
+        alert("Erro ao enviar: " + JSON.stringify(err));
+      });
+  });
 </script>
 
 </html>
