@@ -3,359 +3,196 @@
 
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Integração e-Millennium com Mercos | PlugPlayHub</title>
 
-  <title>Integração e-Millennium com Mercos</title>
-  
-  <link rel="shortcut icon" href="/assets/PlugplayHub.ico" type="image/x-icon">
-  <link rel="icon" href="/assets/favicon.ico" />
+  <!-- SEO Tags -->
+  <meta name="description" content="Integração entre e-Millennium e Mercos com espelhamento de cadastros, estoque, pedidos e financeiro. Automatize sua força de vendas B2B com especialistas em e-Millennium.">
+  <meta name="keywords" content="integração Mercos, e-Millennium, força de vendas, ERP, vendas B2B, catálogo digital, gestão comercial, pedidos, estoque, integração de sistemas">
+  <meta name="author" content="PlugPlayHub">
 
-  <meta name="description"  content= "integração e-Millennium e Mercos, integramos cadastros, financeiro e vendas, somos especialistas no e-Millenium, somos o melhor custo benefício">
-  
-  <meta name="keywords" content="integração Mercos, plataforma Mercos, integração de e-commerce, soluções para Mercos, integração de estoque Mercos, integração de produtos Mercos">
-
-  <meta property="og:title" content="Integração e-Millennium - Mercos força de vendas">
-  <meta property="og:description"
-    content="integração e-Millennium e Mercos, integramos cadastros, financeiro e vendas, somos especialistas no e-Millenium, somos o melhor custo benefício">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Integração e-Millennium com Mercos - PlugPlayHub">
+  <meta property="og:description" content="Automatize sua gestão comercial com a integração entre Mercos e e-Millennium. Somos especialistas em ERP e vendas B2B.">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://plugplayhub.com.br/Mercos">
 
-    <!-- Script para usar no contato -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      emailjs.init('PZWJ_NRvnp99AfJX6')
-    </script>
-    <!-- Fim Script  contato -->
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/PlugplayHub.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" />
 
-  <!-- ler o icone em awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- estava no final... preciso entender sua utilidade -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    -->
-
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-  <!-- Bootstrap Icons-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-    rel="stylesheet" type="text/css" />
-  <!-- SimpleLightbox plugin CSS-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-
-<!--<body class="p-4 m-0 border-0 bd-example m-0 border-0">   p-4 define espaçamento -->
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-  <!-- <nav class="navbar navbar-expand-lg navbar-collapse text-bg-light  fixed-top " id="mainNav">-->
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand img-fluid col-4" href="Index.html">
-            <img src="./assets/img/Plugplay hub_azul.png" class="d-block w-50" alt="...">
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="Index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="Integracoes.html">Integrações</a></li>
-                <li class="nav-item"><a class="nav-link " aria-current="page" href="planos.html">Planos</a></li>
-                <li class="nav-item"><a class="nav-link " href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </div>
- </nav>
- <header class="masthead_como">
-  <div class="container  h-90 ">
-      
-  </div>
-</header>
-
-<br>
-<br>
-
-  <div class="container px-3 ">    
-    <div class="row gx-4">
-      <div class="col-lg-4 col-md-5  ">
-        <img class="img-fluid" src="./assets/img/plataformas/central_ajuda/Mercos.png"
-          alt="Integrar">
+      <a class="navbar-brand img-fluid col-4" href="Index.html">
+        <img src="./assets/img/Plugplay hub_azul.png" class="d-block w-50" alt="Logo PlugPlayHub">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Integracoes.html">Integrações</a></li>
+          <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-  <br>
-  <br>
+  </nav>
+
+  <header class="masthead_como"></header>
 
 
-  <div class="container px-lg-5">
-    <div class="row gx-4 ">
-      <div class="col-lg-12 ">
-        <div class="mt-1 ">
-          <h3 class="mt-0">O que é o Mercos?</h3>
-          <hr >
-          <br>
+  <main class="container mt-5 pt-5">
+    <h1 class="mb-4">Integração entre Mercos e e-Millennium</h1>
 
-          <P>
-          <h3>Como funciona e por que escolher esta solução para sua força de vendas?</h3>
-          
-          </P>
-          <div class="m-3 ">
-            <p>O Mercos é um sistema de vendas completo para empresas que vendem para o atacado: com automação de pedidos, aplicativo de vendas externas, e-commerce B2B e solução de pagamentos. Tudo de forma prática, intuitiva e integrada ao seu ERP.</p>
-            <br>
-            <div class="text-muted  ">
-             
-              <p>
-                 
-                * Catálogo Digital de Produtos: Disponibiliza um catálogo atualizado dos produtos, facilitando a apresentação e venda aos clientes.
-                <br><br>
-                * Gestão de Pedidos: Permite a emissão e acompanhamento de pedidos em tempo real, integrando-se com sistemas de gestão empresarial (ERP)
-                <br><br>
-                * Relatórios e Indicadores: Fornece dados analíticos sobre o desempenho de vendas, metas atingidas e comissões, auxiliando na tomada de decisões estratégicas.​
-                <br><br>
-                * O aplicativo é compatível com dispositivos Android e iOS, garantindo mobilidade e flexibilidade para as equipes de vendas. Além disso, integra-se com diversos ERPs, como o TotalERP e o Omie, proporcionando uma gestão comercial mais eficiente
-                <br><br>
-                
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./assets/img/plataformas/central_ajuda/Mercos.png" class="img-fluid" alt="Logo Mercos">
+        </div>
+        <div class="col-md-8">
+          <h2>O que é o Mercos?</h2>
+          <p>O Mercos é uma plataforma de vendas B2B voltada para empresas que comercializam no atacado. Oferece catálogo digital, automação de pedidos, aplicativo de vendas externas, e-commerce B2B e soluções de pagamento integradas ao ERP.</p>
+          <h3>Principais recursos do Mercos:</h3>
+          <ul>
+            <li>Catálogo digital com informações atualizadas de produtos.</li>
+            <li>Gestão de pedidos integrada ao ERP.</li>
+            <li>Relatórios de desempenho e metas de vendas.</li>
+            <li>Compatibilidade com Android e iOS.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-              </p>
+    <section class="mb-5">
+      <h2>Vantagens da integração com o Mercos</h2>
+      <ul>
+        <li>Acesso offline para realizar vendas em qualquer lugar.</li>
+        <li>Automatização do processo comercial via aplicativo.</li>
+        <li>Catálogo sempre atualizado para a equipe comercial.</li>
+        <li>Maior produtividade e controle de pedidos.</li>
+      </ul>
+    </section>
 
-              
+    <section class="mb-5">
+      <h2>Integração Mercos x e-Millennium pela PlugPlayHub</h2>
+      <p>Com a solução PlugPlayHub, a integração entre Mercos e e-Millennium é completa e automatizada. Veja o que espelhamos:</p>
+      <ul>
+        <li>Árvore de menus e cores conforme cadastradas na vitrine do e-Millennium.</li>
+        <li>Grade de tamanhos, estoque (atualizado a cada 5 min), e estoque projetado.</li>
+        <li>Preços conforme tabela "De / Por" com opção de promoções agendadas.</li>
+        <li>Produtos configurados para vitrine são replicados automaticamente.</li>
+        <li>Status dos pedidos: faturados, cancelados e em andamento.</li>
+        <li>Financeiro em tempo real com títulos a receber/recebidos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="page-section text-bg-dark" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-white">Vamos conversar!</h2>
+        <p class="text-light">Relate sua necessidade em poucas palavras:</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="form">
+            <div class="form-floating mb-3">
+              <input class="form-control" name="name" id="name" type="text" placeholder="Nome completo" required>
+              <label for="name">Nome completo</label>
             </div>
-          </div>
-
-        </div>
-      </div>
-      <br>
-      <br>
-      
-      
-      <div class="col-lg-12  ">
-        <div class="mt-1 ">
-
-          <P>
-          <h3>Vantagens </h3>
-          
-          <div class="m-3 ">
-            <div class="text-muted  ">
-              <p>
-                * - Acesso Offline: Mesmo sem conexão com a internet, os representantes podem acessar informações sobre produtos e realizar vendas, o que é ideal para visitas a clientes em locais com baixa conectividade.
-                <br><br>
-                * - Automatização do Processo de Vendas: O aplicativo permite que representantes comerciais façam pedidos e cotações diretamente pelo celular, o que agiliza o processo de vendas, mesmo em locais sem conexão com a internet.
-                <br><br>
-                * - Catálogo Digital de Produtos: Os representantes têm acesso a um catálogo atualizado de produtos, facilitando a apresentação ao cliente e a realização de vendas de forma mais eficiente.
-                <br><br>
-                * - Aumento da Produtividade: Com um processo de vendas mais ágil e organizado, as equipes de vendas conseguem ser mais produtivas, reduzir erros e aumentar as vendas.
-                <br>
-                
-                
-              </p>
+            <div class="form-floating mb-3">
+              <input class="form-control" name="email" id="email" type="email" placeholder="nome@exemplo.com" required>
+              <label for="email">Email</label>
             </div>
-          </div>
-
-          
-          <br>
-          <div class="m-3 ">
-            <p>O escopo da integração Plugplayhub Mercos x e-Millennium </p>
-
-            <div class="text-muted  ">
-              <p>
-                
-                *A árvore de menus de navegação será espelhada conforme o que for cadastrado na Vitrine do e-Millennium
-                <br><br>
-                *As cores serão espelhadas conforme o cadastro no e-Millennium.
-                <br><br>
-                *A grade de tamanhos será espelhada conforme o cadastro no e-Millennium.
-                <br><br>
-                *O estoque será espelhado conforme a disponibilidade no e-Millennium, com atualizações realizadas a cada 5 minutos, em média. Para empresas que importam e precisam controlar suas vendas com base no estoque projetado — que inclui o estoque disponível mais as compras em aberto — temos a solução ideal. Entre em contato conosco e solicite uma análise personalizada do seu caso.
-                <br><br>
-                *Os preços serão espelhados conforme as tabelas 'De / Por' do e-Millennium, com atualizações realizadas a cada 5 minutos, em média. A partir do hub, é possível criar promoções com agendamento de início e fim.
-                <br><br>
-                *Os produtos serão espelhados conforme a disponibilidade na vitrine do e-Millennium, obedecendo à premissa de que o SKU deve estar configurado para inclusão na vitrine. Qualquer alteração realizada no produto será replicada para a plataforma.
-                <br><br>
-                *Espelhamos todos os status dos pedidos à medida que ocorrem, incluindo faturamentos e cancelamentos
-                <br><br>
-                *Espelhamos titulos a receber e recebidos na Plataforma Mercos, gerados pelo e-Millennium. O representante tem a informação do financeiro em tempor real.
-              </p>
+            <div class="form-floating mb-3">
+              <input class="form-control" name="time" id="phone" type="tel" placeholder="(11) 99999-9999" required>
+              <label for="phone">Celular</label>
             </div>
-          </div>
-
-          <br>
-          <br>
-          
-
+            <div class="form-floating mb-3">
+              <textarea class="form-control" name="message" id="message" placeholder="Mensagem" style="height: 10rem" required></textarea>
+              <label for="message">Mensagem</label>
+            </div>
+            <div class="d-grid">
+              <input type="submit" id="button" class="btn btn-primary btn-xl" value="Enviar">
+            </div>
+          </form>
         </div>
       </div>
-
     </div>
-  </div>
-  <br>
-
-<!-- Contact este envia o e-mail -->
-<section class="page-section text-bg-dark" id="contact">
-    
-    
-  <div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-8 col-xl-6 text-center">
-        <h2 class="mt-0">Vamos conversar!</h2>
-        
-        <p class="text-ligth mb-5">Relate sua necessidade em poucas palavras!</p>          
-      </div>
-    </div>
-    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-      <div class="col-lg-8">
-
-        <form id="form">           
-                     
-          <div class="form-floating mb-3">
-            <input class="form-control" name="name"  id="name" type="text" placeholder="Enter your name..."
-              data-sb-validations="required" />
-            <label for="name">Nome Completo</label>
-            <div class="invalid-feedback" data-sb-feedback="name:required">Nome é necessário.</div>
-          </div>
-          
-          <div class="form-floating mb-3">
-            <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com.br"
-              data-sb-validations="required,email" />
-            <label for="email">Email</label>
-            <div class="invalid-feedback" data-sb-feedback="email:required">Email é necessário.</div>                
-          </div>
-          
-          <div class="form-floating mb-3">
-            <input class="form-control" name="time"  id="phone" type="tel" placeholder="(123) 456-7890"
-              data-sb-validations="required" />
-            <label for="phone">Celular</label>
-            <div class="invalid-feedback" data-sb-feedback="phone:required">Ceular é necessário.</div>
-          </div>
-          
-          <div class="form-floating mb-3">
-            <textarea class="form-control" name="message"  id="message" type="text" placeholder="Enter your message here..."
-              style="height: 10rem" data-sb-validations="required"></textarea>
-            <label for="message">Mensagem</label>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Mensagem é necessária.</div>
-          </div>           
-      
-                      
-          <div class="d-grid">   
-             <input type="submit" id="button" class="btn btn-primary btn-xl" id="button" type="submit" target="_blank" value="Enviar" >                        
-          </div>
-
-
-        </form>
-      </div>
-    </div>
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-4 text-center mb-5 mb-lg-0">
-        <!--
-        <div>(16) 9 8856-4392
-          <br>
-          <br>
-
-          <a href="https://api.whatsapp.com/send/?phone=5516988564392&text=Ol%C3%A1%2C+seja+bem+vindo+a+PlugPlayhub+%2C+como+posso+ajudar%3F&type=phone_number&app_absent=0"
-            target="_blank">
-            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #10c625; "></i>
-
-          </a>
-        </div>
-        -->
-      </div>
-    </div>
-  </div>  
-
-</section>
+  </section>
 
 </body>
- 
 
-</footer>
+  <footer class="bg-light py-5">
+    <div class="container text-center">
+      <div class="small text-muted">Copyright &copy; 2018 - PlugPlayHub</div>
+    </div>
+  </footer>
 
-<!-- Footer-->
-<footer class="bg-light py-5">
-  <div class="container px-4 px-lg-5">
-    <div class="small text-center text-muted">Copyright &copy; 2018 - PlugPlayHub</div>
-  </div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- SimpleLightbox plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init('PZWJ_NRvnp99AfJX6');
+    const btn = document.getElementById("button");
+    document.getElementById("form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      let isValid = true;
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const message = document.getElementById("message");
 
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-<!-- Script para usar no contato -->
-<script>
-  const btn = document.getElementById("button");
-
-  document.getElementById("form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Impede o envio automático do formulário
-
-    let isValid = true;
-
-    // Captura os campos do formulário
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let phone = document.getElementById("phone");
-    let message = document.getElementById("message");
-
-    // Função para validar campo e exibir erro
-    function validateField(field) {
-      if (field.value.trim() === "") {
-        field.classList.add("is-invalid"); // Adiciona a classe de erro do Bootstrap
-        isValid = false;
-      } else {
-        field.classList.remove("is-invalid");
+      function validateField(field) {
+        if (field.value.trim() === "") {
+          field.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          field.classList.remove("is-invalid");
+        }
       }
-    }
 
-    // Aplica validação para cada campo obrigatório
-    validateField(name);
-    validateField(email);
-    validateField(phone);
-    validateField(message);
+      validateField(name);
+      validateField(email);
+      validateField(phone);
+      validateField(message);
 
-    if (!isValid) {
-      alert("Por favor, preencha todos os campos.");
-      return; // Se algum campo estiver inválido, interrompe o envio
-    }
+      if (!isValid) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
 
-    // Se os campos estiverem preenchidos, inicia o envio via EmailJS
-    btn.value = "Enviando...";
+      btn.value = "Enviando...";
 
-    const serviceID = "default_service";
-    const templateID = "template_89wyrqd";
+      emailjs.sendForm("default_service", "template_89wyrqd", this)
+        .then(() => {
+          btn.value = "Enviar";
+          alert("Mensagem enviada com sucesso!");
+          this.reset();
+        })
+        .catch((err) => {
+          btn.value = "Enviar";
+          alert("Erro ao enviar: " + JSON.stringify(err));
+        });
+    });
+  </script>
 
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = "Enviar";
-        alert("Mensagem enviada com sucesso!");
-        document.getElementById("form").reset(); // Limpa o formulário após o envio
-      })
-      .catch((err) => {
-        btn.value = "Enviar";
-        alert("Erro ao enviar: " + JSON.stringify(err));
-      });
-  });
-</script>
-<!-- Fim Script  contato -->
 
 </html>

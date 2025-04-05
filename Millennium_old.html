@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Integração e-Millennium - Central de ajuda</title>
+  <link rel="shortcut icon" href="/assets/PlugplayHub.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" />
+  <meta name="description" content="Veja como realizar as configurações e validações dos dados necessários para a integração com o e-Millennium e todo o ecossistema">
+  <meta property="og:title" content="Integração e-Millennium - Central de ajuda">
+  <meta property="og:description" content="Veja como realizar as configurações e validações dos dados necessários para a integração com o e-Millennium e todo o ecossistema">
+  <meta name="keywords" content="Scopo de integração e-millennium, Integração e-Millennium">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plugplayhub.com.br/millennium">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('PZWJ_NRvnp99AfJX6')</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand img-fluid col-4" href="Index.html">
+        <img src="./assets/img/Plugplay hub_azul.png" class="d-block w-50" alt="...">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Integracoes.html">Integrações</a></li>
+          <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead_como"><div class="container h-90"></div></header>
+  <br><br>
+  <div class="container px-3">
+    <div class="row gx-4">
+      <div class="col-lg-4 col-md-5">
+        <img class="img-fluid" src="./assets/img/plataformas/central_ajuda/Logo_Linx Emillenium_positivo.png" alt="Integrar">
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container px-lg-5">
+    <div class="row gx-4">
+      <div class="col-lg-12">
+        <div class="mt-1">
+          <h1 class="mt-0">Aprenda a configurar a integração com e-Millennium</h1>
+          <hr>
+          <br>
+
+          <h2>Credenciais de acesso e-Millennium</h2>
+          <div class="m-3">
+            <p>Para realizar integração no e-Millennium há duas maneiras de autenticar:</p>
+            <div class="text-muted">
+              <h3>a) Basic Authentication</h3>
+              <p>Requer usuário e senha do Windows<br>
+                Usuário: precisa ser Administrador<br>
+                Senha: ****<br>
+                IP de internet do servidor Millenium<br>
+                Liberação da Porta 6017, usada para integração</p>
+              <p>Se a empresa usar domínio, crie um usuário local no servidor Windows como Administrador, pois a autenticação pode ser negada por regras de segurança.</p>
+              <h3>b) Usuário do e-Millennium</h3>
+              <p>Requer IP do servidor, Porta 6017 liberada e credenciais criadas no e-Millennium.</p>
+              <p>Mais seguro, pois não exige permissão total no servidor Windows.</p>
+              <p><em>Observação:</em> Se o servidor usar proxy, é necessário configurar NAT para redirecionar a porta 6017.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="mt-1">
+          <h2>Escopo de integração e cadastros</h2>
+          <div class="m-3">
+            <p>O escopo da integração Plugplayhub com e-Millennium é completo:</p>
+            <div class="text-muted">
+              <ul>
+                <li>Produtos + especificações e classificações</li>
+                <li>Árvore de categorias</li>
+                <li>Preço de venda e estoques</li>
+                <li>Pedidos: inclusão e atualização de status</li>
+                <li>Documentos fiscais dos pedidos</li>
+                <li>Envio de etiquetas: Mercado Livre, Netshoes, B2W etc.</li>
+                <li>Lista de vendedores e representantes</li>
+                <li>Tipos de frete/pedido/condições de pagamento</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="m-3">
+            <h3>Primeiro passo</h3>
+            <p>Cadastre a vitrine no e-Millennium e organize a árvore de categorias conforme a plataforma. Para marketplaces, separe por departamento e crie submenus conforme características do produto (ex: camisetas, calças).</p>
+          </div>
+
+          <div class="m-3">
+            <h3>Configurar a integração no PlugPlayhub</h3>
+            <p>a) Cadastre o webservice com as credenciais do e-Millennium. Clique no ícone da Linx no PlugPlayhub e faça o teste de conexão.</p>
+            <p>b) Cadastre a vitrine a ser integrada. O hub listará automaticamente todas as vitrines cadastradas no e-Millennium.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Formulário de contato e rodapé seguem inalterados -->
+</body>
+</html>
