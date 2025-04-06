@@ -89,6 +89,11 @@
         <div class="col-lg-8">
           <h2>O que é a Linx?</h2>
           <p>A Linx é uma das maiores empresas de tecnologia para o varejo da América Latina. Seu ecossistema de soluções abrange canais físicos e digitais com foco total na experiência omnichannel.</p>
+          
+        </div>
+      </div>
+      <div class="row gy-4 mt-4">
+        <div class="col-12">
           <h3>Principais soluções da Linx:</h3>
           <ul>
             <li>Integração entre loja física e e-commerce.</li>
@@ -97,7 +102,7 @@
             <li>Ferramentas para fidelização, promoções e CRM.</li>
           </ul>
         </div>
-      </div>
+      </div>    
 
       <div class="row gy-4 mt-4">
         <div class="col-12">
@@ -129,41 +134,35 @@
           <h2>Escopo de integração</h2>
           <p>O escopo da integração Plugplayhub com e-Millennium é completo:</p>
           <ul>
-            <li>Produtos + especificações e classificações</li>
+            <li>Produtos + especificações + classificações "marca, tipo, categoria, departamento, coleção, sub-coleção e divisão</li>
             <li>Árvore de categorias</li>
             <li>Preço de venda e estoques</li>
             <li>Pedidos: inclusão e atualização de status</li>
-            <li>Documentos fiscais dos pedidos</li>
-            <li>Envio de etiquetas: Mercado Livre, Netshoes, B2W etc.</li>
+            <li>Documentos fiscais dos pedidos</li>            
             <li>Lista de vendedores e representantes</li>
             <li>Tipos de frete/pedido/condições de pagamento</li>
           </ul>
         </div>
       </div>        
 
-      <div class="row gy-4 mt-4">
-        <div class="col-12">
-          <h2>Credenciais de acesso e-Millennium</h2>
-          <p>Para realizar integração no e-Millennium há duas maneiras de autenticar:</p>
-          <p>obs.: Requer IP do servidor, Porta 6017 liberada no Firewall e mapeada no roteador</p>
-          <h5>a) Basic Authentication</h5>
-          <ul>
-            <li>Requer usuário e senha do Windows</li>
-            <li>Usuário: precisa ser Administrador</li>
-            <li>Senha: ****</li>
-            <li>IP de internet do servidor e-Millennium</li>
-            <li>Liberação da Porta 6017, usada para integração</li>
-            <li>Se a empresa usar domínio, crie um usuário local no servidor Windows como Administrador, pois a autenticação pode ser negada por regras de segurança.</li>
-          </ul>
-          <h5>b) Usuário do e-Millennium</h5>
-          <ul>
-            <li>Precisa criar um usuário no gerenciador de usuários do e-Millennium</li>
-            <li>Modelo de authenticação requer a geração de um token</li>            
-          </ul>          
+      <section class="mb-5">  
+        <div class=col-12">
+          <h2>Credenciais de acesso e-Millennium</h2>         
+            <p>Para realizar integração no e-Millennium há duas maneiras de autenticar:</p>
+            <p>A premissa é possuir um IP de internet fixo, para IP de internet dinâmico pode ser usado um DynDns, neessário garantir o roteamento da porta 6017 para o IP de rede do servidor Millennium e liberada no Firewall.</p>
+            <h5>a) Basic Authentication</h5>
+            <ul>
+              <li>Requer usuário e senha do Windows. O usuário precisa ser Administrador da máquina. Se a empresa usar domínio, crie um usuário local no servidor Windows como Administrador, pois a autenticação pode ser negada por regras de segurança.</li>                       
+              <li>IP de internet do servidor e-Millennium</li>           
+            </ul>
+            <h5>b) Usuário do e-Millennium</h5>
+            <ul>
+              <li>Precisa criar um usuário no gerenciador de usuários do e-Millennium</li>
+              <li>Modelo de authenticação requer a geração de um token</li>            
+            </ul>          
+          
         </div>
-      </div>                 
-
-
+      </section>              
     </div>
   </section>
 </main>
