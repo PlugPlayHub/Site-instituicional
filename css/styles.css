@@ -598,6 +598,7 @@ progress {
   content: "— ";
 }
 
+/* Estilos padrões que você já possui */
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -611,6 +612,17 @@ progress {
   max-width: 100%;
   height: auto;
 }
+
+/* Destaque ao passar o mouse apenas em imagens com a classe específica */
+.hover-highlight {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 
 .figure {
   display: inline-block;
@@ -11027,12 +11039,7 @@ header.masthead_planos h1, header.masthead_planos .h1 {
 }
 
 
-.img-fluid:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
+
 
 
 header.masthead_como {
